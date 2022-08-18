@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animal Kingdom</title>
+    <!-- CSS only -->
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DynaPuff">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+</head>
+<body onload="getAll()" style="background-color: #C9EDDC;">
+    <nav class="navbar bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="imgs/tiger-g0e5ffe16a_640.png" alt="" width="85" height="70" class="d-inline-block">
+            Independent Sanctuary
+          </a>
+        </div>
+      </nav>
+ 
+    <div>
+        <h1 id="title">Animal Kingdom</h1>
+    </div>
+    <div id="form-div">
+        <form>
+            <div class="mb-3">
+                <div>
+                  <input type="text" class="form-control" id="nameInput" placeholder="Name">
+                </div>
+              </div>
+              <div class="mb-3">
+                <div>
+                  <input type="text" class="form-control" id="genusInput" placeholder="Genus">
+                </div>
+              </div>
+              <div class="mb-3">
+                <div>
+                  <input type="text" class="form-control" id="dietaryGroupInput" placeholder="Diet">
+                </div>
+              </div>
+              <div class="mb-3">
+                <div>
+                  <input type="text" class="form-control" id="ageInput" placeholder="Age">
+                </div>
+              </div>
+              <input type="number" class="form-control" id="idInput" placeholder="ID">
+
+              <div id="btns">
+              <button type="button" class="btn" id="createBtn">Create</button>
+              <button type="button" class="btn" id="updateBtn">Update</button>
+              <button type="button" class="btn" id="deleteBtn">Delete</button>
+              <button type="reset" class="btn" id="resetBtn">Reset</button>
+            </div>
+            
+        </form>
+        
+    </div>
+    <div id="results-div"></div>
+    <h3 class="animals">Meet some of the group!</h3>
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="imgs/snow-leopard-g1890289f4_1920.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Say hello to Meena!</h5>
+            <p>Meena is a very friendly snow leopard!</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="imgs/tiger-ge60a335f9_1920.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Say Hi to Raina! </h5>
+            <p>Raina has been with us since she was 2 months old!</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="imgs/zoo-gcda48530c_1920.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>This is Rin!</h5>
+            <p>Rin is a very playful and friendly jaguar. He's not as intimidating as he looks! :D</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    
+    <!--<button type="button" id="createBtn">Create</button>-->
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="JS/main.js"></script>
+</body>
+</html>
