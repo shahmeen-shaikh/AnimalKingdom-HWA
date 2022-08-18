@@ -1,0 +1,90 @@
+
+
+#title{
+    color: #627264;
+    text-align: center;
+    font-size: 50px;
+    font-family: DynaPuff;
+    padding: 30px;
+   
+}
+a {
+    font-family: DynaPuff;
+}
+#form-div{
+    border: 3px solid #6A706E;
+    padding: 10px;
+    width: 25%;
+    margin-top: 2%;
+    margin-left: 7%;
+    padding:10px;
+    display:inline-grid;
+    height: fit-content;
+
+
+}
+
+#results-div{
+    border: 3px solid #6A706E;
+    padding: 10px;
+    font-family: DynaPuff;
+    width: fit-content;
+    margin: 10px;
+    width: 60%;
+    margin-top: 2%;
+    margin-left: 2%;
+    padding:10px;
+    display:inline-grid;
+    text-align: center;
+    color: #627264;
+    
+
+}
+
+.entry-div{
+    
+    display: inline-grid;
+    margin: 10px;
+    text-align: center;
+    
+
+}
+
+#btns{
+    padding-top: 10px;
+}
+
+#createBtn{
+   background-color: #89B6A5;
+   font-family: DynaPuff;
+}
+
+#updateBtn{
+    background-color:#d06dac ;
+    font-family: DynaPuff;
+}
+
+#deleteBtn{
+    background-color: #C76D7E;
+    font-family: DynaPuff;
+}
+
+#resetBtn{
+    background-color: #a9e4ea;
+    font-family: DynaPuff;
+    margin: 10px;
+   
+
+}
+
+.carousel {
+    position: relative;
+    margin: 40px;
+}
+
+.animals{
+    text-align: center;
+    font-family: DynaPuff;
+    padding-top: 35px;
+    color: #627264;
+}
