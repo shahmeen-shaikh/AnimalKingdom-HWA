@@ -50,6 +50,7 @@ public class AnimalControllerIntegrationTest {
 				.andExpect(content().json(resultAsJSON));
 	}
 	
+	
 	@Test
 	public void readAllTest() throws Exception {
 		// Create a list to check the output of readAll
